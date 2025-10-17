@@ -1,9 +1,16 @@
-#include <iostream>
+#include <stdio.h>
 int main(){
-    int i;
-    char *s = "Welcome";
-    for(i = 0 ; s[i] != '\0' ; i++){
+    int i , j;
+    char A[] = "python";
+    for(j = 0 ; A[j] != '\0' ; j++){
 
     }
-    printf("%d" , i);
+    j = j-1;
+    for(i = 0 ; i < j ; i++ ; j--){
+        int temp = A[i];
+        A[i] = A[j];
+        A[j] = temp;
+
+    }
+    printf("%s" , A);
 }
